@@ -159,9 +159,10 @@ public class CalculatorClass {
     }
     public static boolean validOperator(char c)
     {
-        if(c == '+' || c == '-' || c == '*'|| c == '/' || c == '(' || c == '^')
-            return true;
-        else return false;
+       // if(c == '+' || c == '-' || c == '*'|| c == '/' || c == '(' || c == '^')
+           // return true;
+        //else return false;
+	    return (c == '+' || c == '-' || c == '*'|| c == '/' || c == '(' || c == '^');
     }
     //check whether the braces match
     public static boolean bracketMatch(String string)
