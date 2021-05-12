@@ -1,11 +1,11 @@
-package JavaTest.caculater;
+package javaTest.caculater;
 
 
 import java.math.BigDecimal;
 import java.util.Scanner;
 import java.util.Stack;
 
-public class Calc {
+public class CalculatorClass {
 
     public static void main(String[] args) {
     	System.out.println("Enter your equation");
