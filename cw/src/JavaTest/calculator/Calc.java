@@ -39,22 +39,22 @@ public class CalculatorClass {
             }
             if( i == item.length())
                 break;
-            StringBuilder SB = new StringBuilder("");
+            StringBuilder sb = new StringBuilder("");
             if (c == '-' && key)
             {
                 ++i;
                 if(i < item.length())
                     c = item.charAt(i);
-                SB.append('-');
+                sb.append('-');
             }
             while (isNumber(c) || c == '.')
             {
                 key = false;
-                SB.append(c);
+                sb.append(c);
                 if (++i >= item.length()) break;
                 c = item.charAt(i);
             }
-            if (!SB.toString().equals("")){
+            if (!sb.length() == 0){
                 stack.push(new BigDecimal(SB.toString()));
 
             }
