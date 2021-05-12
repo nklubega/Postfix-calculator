@@ -60,8 +60,8 @@ public class CalculatorClass {
             }
             if (c == '^')
             {
-	            if((!stack1.empty()))
-	            if( ((char)stack1.peek() == '^'))
+	            if((!stack1.empty()) && ((char)stack1.peek() == '^'))
+	        
 		              {
 		                 stack.push(stack1.pop());
 		              }
@@ -151,10 +151,11 @@ public class CalculatorClass {
     //method to check whether character is a number
     public static boolean isNumber(char c)
     {
-        if (c >= '0' && c <= '9')
-            return true;
-        else
-            return false;
+        //if (c >= '0' && c <= '9')
+          //  return true;
+        //else
+          //  return false;
+	    return (c >= '0' && c<='9');
     }
     public static boolean validOperator(char c)
     {
